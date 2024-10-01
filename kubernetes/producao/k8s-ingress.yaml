@@ -1,16 +1,16 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: fiap-pedido-ingress
+  name: fiap-appointment-ingress
 spec:
   rules:
-    - host: fiap-pedido.example.com  # Substitua pelo domínio desejado
+    - host: fiap-appointment.example.com  # Substitua pelo domínio desejado
       http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: fiap-pedido-service
+                name: fiap-appointment-service
                 port:
                   number: 80

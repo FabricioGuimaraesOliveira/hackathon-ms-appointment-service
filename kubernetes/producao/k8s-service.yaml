@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: fiap-pedido-service
+  name: fiap-appointment-service
 spec:
   selector:
-    app: fiap-pedido
+    app: fiap-appointment
   type: LoadBalancer  # Para expor o serviço externamente
   ports:
     - protocol: TCP
